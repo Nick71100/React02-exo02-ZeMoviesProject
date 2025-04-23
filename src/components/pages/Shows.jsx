@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Show() {
-  return (
-    <div>Show</div>
-  )
+  return <h2>The Show page !</h2>;
 }
 
-export default Show
+export default Show;

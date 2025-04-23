@@ -1,10 +1,15 @@
+import React from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
+
+import App from "./App";
+import { AuthProvider } from "./components/utils/AuthContext";
 import "./sass/index.scss";
-import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(
-	<BrowserRouter>
-		<App />
-	</BrowserRouter>
+  <BrowserRouter>
+    <AuthProvider>
+      <App />
+    </AuthProvider>
+  </BrowserRouter>
 );
